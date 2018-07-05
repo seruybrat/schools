@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+
+  <!-- svg-sprite -->
+  @@include('../assets/icons/svg-sprite/sprite.html')
+  <!-- end svg-sprite -->
+
+  <div class="wrapper">
+    @@include('layout/header/header.html') @@include('layout/search-bar/search-bar.html') @@include('layout/sort-bar/sort-bar.html')
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 col-md-6 col-sm-12">
+            @@include('layout/main/main.html')
+          </div>
+          <div class="col-4 col-md-6 sm-hide mobile-filter">
+            @@include('layout/sidebar/sidebar.html')
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('layout/footer/footer.html')
+  </div>
+
+  <script src="js/vendor/nouislider.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA1j_L_2zxBUH6eGW_jflNDSnAOD2kUNY&callback=initMap">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{ 
+  "links": [
+    {
+      "name" : "Schools and clubs",
+      "href" : ""
+    },
+    {
+      "name" : "Events",
+      "href" : ""
+    },
+    {
+      "name" : "About us",
+      "href" : ""
+    },
+    {
+      "name" : "FAQ",
+      "href" : ""
+    },
+    {
+      "name" : "Contact us",
+      "href" : ""
+    }
+  ]
+}

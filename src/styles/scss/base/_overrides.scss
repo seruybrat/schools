@@ -1,0 +1,33 @@
+//nouislider
+.custom-range {
+  margin: em(16) 0 em(20);
+
+  &.noUi-horizontal {
+    height: 4px;
+  }
+
+  &.noUi-target {
+    background-color: $element-color;
+    border: none;
+  }
+
+  .noUi-handle {
+    top: -8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+
+    &:after,
+    &:before {
+      display: none;
+    }
+  }
+
+  .noUi-connects {
+    border-radius: 3px;
+  }
+
+  .noUi-connect {
+    background-color: $main-color;
+  }
+}

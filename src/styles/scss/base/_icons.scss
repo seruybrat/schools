@@ -1,0 +1,54 @@
+.icon-logo {
+  width: 118px;
+  height: 62px;
+}
+
+.icon-user {
+  width: 19px;
+  height: 20px;
+}
+
+.icon-search {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-pin {
+  width: 14px;
+  height: 19px;
+}
+
+.icon-car {
+  width: 13px;
+  height: 12px;
+  fill: darken($element-color, 100%);
+}
+
+.icon-star {
+  width: 12px;
+  height: 12px;
+  margin-left: em(4);
+  fill: $accent-color;
+}
+
+.icon-star--empty {
+  fill: $element-color;
+}
+
+.icon-heart {
+  width: 20px;
+  height: 15px;
+  fill: $main-color;
+}
+
+.icon-heart-empty {
+  width: 20px;
+  height: 15px;
+  fill: $element-color;
+}
+
+.icon-direction {
+  width: 20px;
+  height: 20px;
+  fill: $main-color;
+}

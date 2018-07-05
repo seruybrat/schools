@@ -1,0 +1,23 @@
+// Media breakepoints
+$xlg: 1440px;
+$lg: 980px;
+$md: 780px;
+$sm: 581px;
+$xs: 420px;
+
+// Grid
+$col: 100%/12; //12 columns
+$container-width: 952px;
+$main-grid-padding: 20; //px (miss for px-to-em function)
+$col-grid-padding: 15; //px (miss for px-to-em function)
+
+// Fonts
+$main-font-family: Museosanscyrl, sans-serif;
+$root-font-size: 16px;
+
+// Colors
+$main-color: #128dec;
+$accent-color: #11ca11;
+$font-color: #000000;
+$element-color: #dedede;
+$bg-color: #f6f4eb;

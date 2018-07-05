@@ -1,0 +1,117 @@
+.search-bar {
+  position: relative;
+  padding-top: em(40);
+  z-index: 2;
+
+  @media screen and (max-width: $md) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: $md) {
+    margin-top: em(60);
+  }
+
+  &__title {
+    margin: 0;
+    padding-right: em(10);
+    font-size: em(36);
+    font-weight: 500;
+
+    @media screen and (max-width: $sm) {
+      text-align: center;
+      margin-bottom: em(16);
+    }
+  }
+}
+
+.search {
+  display: flex;
+
+  @media screen and (max-width: $sm) {
+    margin-bottom: em(16);
+  }
+
+  &__address {
+    width: 30%;
+
+    .search__input {
+      padding-left: em(20);
+      border-right: none;
+    }
+  }
+
+  &__location {
+    position: relative;
+    width: 70%;
+
+    .search__input {
+      padding-left: em(40);
+      color: #000;
+
+      &.focus {
+        border: 1px solid $main-color;
+        box-shadow: 0 -2px 5px 1px rgba(23, 84, 131, 0.1);
+
+        & + .dropdown {
+          display: block;
+        }
+      }
+    }
+
+    .icon-search {
+      position: absolute;
+      top: em(15);
+      left: em(15);
+
+      @media screen and (max-width: $md) {
+        top: em(10);
+        transform: scale(0.7);
+      }
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: em(45);
+    padding-right: em(15);
+    font-size: em(16);
+    background-color: #fff;
+    border: 1px solid $element-color;
+    border-radius: 2px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: em(45);
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 1px rgba(23, 84, 131, 0.1);
+    z-index: 2;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: em(16);
+      color: $main-color;
+
+      .icon {
+        padding-right: em(10);
+        fill: $main-color;
+      }
+    }
+  }
+}

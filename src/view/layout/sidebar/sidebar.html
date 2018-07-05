@@ -1,0 +1,180 @@
+<aside class="sidebar">
+  <div class="filter-back sm-show">
+    find
+  </div>
+
+  <form id="filter" class="filter">
+
+    <div class="filter__item">
+
+      <div class="filter__group">
+        <div class="filter__title">
+          Location radius
+        </div>
+        <div class="filter__time">
+          <span id="range-location-value">3</span> miles
+        </div>
+      </div>
+      <div class="filter__parametr range-single">
+        <div id="range-location" class="custom-range"></div>
+      </div>
+
+      <div class="filter__value">
+        <span class="el">~
+          <span id="range-location-time">10</span> min</span>
+        <svg class="icon-car">
+          <use xlink:href="#car"></use>
+        </svg>
+      </div>
+
+    </div>
+
+    <div class="filter__item">
+
+      <div class="filter__group">
+        <div class="filter__title">
+          Open days
+        </div>
+      </div>
+      <div class="filter__parametr">
+        <div class="radio">
+          <input class="radio__input" type="radio" value="weekdays" id="radio-weekdays" name="radioDays">
+          <label class="radio__label" for="radio-weekdays">Weekdays</label>
+          <input class="radio__input" type="radio" value="weekands" id="radio-weekands" name="radioDays">
+          <label class="radio__label" for="radio-weekands">Weekands</label>
+          <input class="radio__input" type="radio" value="" id="radio-all" name="radioDays" checked>
+          <label class="radio__label" for="radio-all">All days</label>
+        </div>
+      </div>
+
+      <div class="filter__group">
+        <div class="filter__title">
+          Open hours
+        </div>
+        <div class="filter__time">
+          <span id="range-hours-value1">8.00 AM</span> -
+          <span id="range-hours-value2">5.00 AM</span>
+        </div>
+      </div>
+      <div class="filter__parametr range-multiple">
+        <div id="range-hours" class="custom-range"></div>
+      </div>
+
+    </div>
+
+    <div class="filter__item">
+
+      <div class="filter__group">
+        <div class="filter__title">
+          Age group
+        </div>
+        <div class="filter__time">
+          <span id="range-age-value">3</span> years
+        </div>
+      </div>
+      <div class="filter__parametr range-single">
+        <div id="range-age" class="custom-range"></div>
+      </div>
+
+      <div class="filter__group collapse">
+        <div class="filter__title">
+          Children with special needs
+        </div>
+      </div>
+      <div class="filter__parametr">
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" value="ADHD" name="special" id="checkbox1">
+          <label class="checkbox__label" for="checkbox1">ADHD</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" value="ASD" name="special" id="checkbox2">
+          <label class="checkbox__label" for="checkbox2">ASD</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" value="Aspergers" name="special" id="checkbox3">
+          <label class="checkbox__label" for="checkbox3">Aspergers syngrome</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" value="Down" name="special" id="checkbox4">
+          <label class="checkbox__label" for="checkbox4">Down syngrome</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" value="Deaf" name="special" id="checkbox5">
+          <label class="checkbox__label" for="checkbox5">Deaf of hard hearing</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" value="Physical" name="special" id="checkbox6">
+          <label class="checkbox__label" for="checkbox6">Physical disabilities</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="filter__item">
+      <div class="filter__group">
+        <div class="filter__title">
+          School or club category
+        </div>
+      </div>
+      <div class="filter__parametr">
+        <div class="radio">
+          <input class="radio__input" type="radio" value="Public School" id="radioPublic" name="private">
+          <label class="radio__label" for="radioPublic">Public</label>
+          <input class="radio__input" type="radio" value="Private School" id="radioPrivate" name="private" checked>
+          <label class="radio__label" for="radioPrivate">Private</label>
+        </div>
+      </div>
+
+      <div class="filter__parametr">
+        <div class="checkbox-group">
+          <input class="checkbox-group__input" type="checkbox" value="art" name="info" id="checkbox7">
+          <label class="checkbox-group__label" for="checkbox7">Art</label>
+          <input class="checkbox-group__input" type="checkbox" value="music" name="info" id="checkbox8">
+          <label class="checkbox-group__label" for="checkbox8">Music</label>
+          <input class="checkbox-group__input" type="checkbox" value="sports" name="info" id="checkbox9">
+          <label class="checkbox-group__label" for="checkbox9">Sports</label>
+          <input class="checkbox-group__input" type="checkbox" value="dance" name="info" id="checkbox10">
+          <label class="checkbox-group__label" for="checkbox10">Dance</label>
+          <input class="checkbox-group__input" type="checkbox" value="theater" name="info" id="checkbox11">
+          <label class="checkbox-group__label" for="checkbox11">Theater</label>
+          <input class="checkbox-group__input" type="checkbox" value="maths" name="info" id="checkbox12">
+          <label class="checkbox-group__label" for="checkbox12">Maths</label>
+          <input class="checkbox-group__input" type="checkbox" value="engineering" name="info" id="checkbox13">
+          <label class="checkbox-group__label" for="checkbox13">Engineering</label>
+          <input class="checkbox-group__input" type="checkbox" value="science" name="info" id="checkbox14">
+          <label class="checkbox-group__label" for="checkbox14">Science</label>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="filter__group">
+      <div class="filter__title">
+        Price range
+      </div>
+      <div class="filter__time">
+        $
+        <span id="range-price-value1">300</span> -
+        <span id="range-price-value2">500</span>
+      </div>
+    </div>
+    <div class="filter__parametr range-multiple">
+      <div id="range-price" class="custom-range"></div>
+    </div>
+
+    <div class="filter__parametr">
+      <div class="radio">
+        <input class="radio__input" type="radio" value="weekly" id="radio5" name="prices" checked>
+        <label class="radio__label" for="radio5">Weekly</label>
+        <input class="radio__input" type="radio" value="monthly" id="radio6" name="prices">
+        <label class="radio__label" for="radio6">Monthly</label>
+        <input class="radio__input" type="radio" value="annually" id="radio7" name="prices">
+        <label class="radio__label" for="radio7">Annually</label>
+      </div>
+    </div>
+  </form>
+
+  <div id="google-map" class="sidebar__map"></div>
+
+</aside>

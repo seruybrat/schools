@@ -1,0 +1,31 @@
+// Font-family
+@include font-face(
+  "Museosanscyrl",
+  "../assets/fonts/Museosanscyrl/Light/MuseosanscyrlLight",
+  100,
+  lighter
+);
+@include font-face(
+  "Museosanscyrl",
+  "../assets/fonts/Museosanscyrl/Regular/Museosanscyrl",
+  300,
+  normal
+);
+@include font-face(
+  "Museosanscyrl",
+  "../assets/fonts/Museosanscyrl/Medium/MuseosanscyrlMedium",
+  500,
+  normal
+);
+@include font-face(
+  "Museosanscyrl",
+  "../assets/fonts/Museosanscyrl/Bold/MuseosanscyrlBold",
+  700,
+  bold
+);
+@include font-face(
+  "Museosanscyrl",
+  "../assets/fonts/Museosanscyrl/ExtraBold/MuseosanscyrlExtraBold",
+  900,
+  bolder
+);

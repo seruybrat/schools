@@ -1,0 +1,67 @@
+// tags
+html {
+  font-family: $main-font-family;
+  font-size: $root-font-size;
+  color: $font-color;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section,
+figure,
+article,
+main,
+header,
+footer {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+//hide svg output
+.visuallyhidden {
+  display: none;
+}
+
+//theme
+.wrapper {
+  background: $bg-color;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+
+  @media screen and (max-width: $lg) {
+    font-size: 14px;
+  }
+}
+
+//animation
+.left-appear {
+  transform: translateX(-25px);
+}
+
+.right-appear {
+  transform: translateX(25px);
+}
+
+.left-appear,
+.right-appear {
+  opacity: 0;
+  transition: all 1s linear;
+
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

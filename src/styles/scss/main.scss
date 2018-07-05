@@ -1,0 +1,26 @@
+// Theme customize
+@import "theme/mixins.scss";
+@import "theme/fonts.scss";
+@import "theme/variables.scss";
+@import "theme/functions.scss";
+@import "theme/grid.scss";
+
+// Base
+@import "base/base.scss";
+
+//Icons
+@import "base/icons.scss";
+
+// Vendor
+@import "vendor/nouislider.scss";
+
+//Overrides
+@import "base/overrides.scss";
+
+// Views
+@import "./src/view/layout/header/header.scss";
+@import "./src/view/layout/search-bar/search-bar.scss";
+@import "./src/view/layout/sort-bar/sort-bar.scss";
+@import "./src/view/layout/main/main.scss";
+@import "./src/view/layout/sidebar/sidebar.scss";
+@import "./src/view/layout/footer/footer.scss";
